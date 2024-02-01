@@ -1,0 +1,27 @@
+/* Google font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.bounce-top-to-bottom {
+  animation-name: bounce-top-to-bottom;
+  animation-duration: 200ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes bounce-top-to-bottom {
+  from{display: none; transform: translateY(-100px);}
+  to{ display: block; transform: translateY(0px);}
+}
+@keyframes bounce-top-to-bottom {
+  from {display: none; transform: translateY(-100px);}
+  to {display: block; transform: translateY(0px);}
+}
