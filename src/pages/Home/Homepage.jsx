@@ -3,8 +3,7 @@ import Banner from "@/components/Home/Banner";
 import SmallerBanners from "@/components/Home/SmallerBanners";
 import Categories from "@/components/Home/Categories";
 import ProductsTab from "@/components/Home/ProductsTab";
-import CarouselTest from "@/components/Home/CarouselTest";
-
+import HotProductsCarousel from "@/components/Home/HotProductsCarousel";
 
 const Homepage = () => {
   return (
@@ -17,9 +16,8 @@ const Homepage = () => {
       <Categories />
       <HTMLComment text=" Products Tab Section " />
       <ProductsTab />
-      {/* Test */}
-        <CarouselTest />
-      
+      <HTMLComment text=" Hot Products "/>
+      <HotProductsCarousel />
     </>
   );
 };
