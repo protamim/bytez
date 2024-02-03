@@ -8,8 +8,8 @@ import NavLinks from "./NavLinks";
 const Navbar = () => {
   return (
     <>
-      <nav className="bg-slate-100 hidden sm:block">
-        <div className="container mx-auto px-5">
+      <nav className="hidden sm:block">
+        <div className="container mx-auto px-5 bg-slate-100">
           <div className="relative h-16 flex items-center justify-between md:flex-none md:grid md:justify-between md:grid-cols-12 md:gap-5">
             {/* Logo */}
             <span className="text-lg sm:text-xl md:col-span-1 lg:text-2xl">

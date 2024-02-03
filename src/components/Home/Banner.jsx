@@ -2,8 +2,8 @@ import { bannerImage } from "@/assets/images/home/banner";
 const Banner = () => {
   return (
     <>
-      <div className="bg-slate-900 text-slate-400 transition-all ease-in-out duration-500">
-        <div className="container mx-auto px-5">
+      <div className=" text-slate-400 transition-all ease-in-out duration-500">
+        <div className="container mx-auto px-5 bg-slate-900">
           <div className="flex flex-col md:flex-row gap-6 sm:gap-10 pt-20 lg:pt-10 max-h-[calc(100vh-3.5rem)] overflow-hidden lg:justify-between lg:max-h-none lg:h-[528px]">
             {/* Left column */}
             <div className="flex flex-col justify-center md:w-8/12 lg:w-auto md:items-start">

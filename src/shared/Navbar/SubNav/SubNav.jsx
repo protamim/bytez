@@ -9,8 +9,8 @@ import { Link } from "react-router-dom";
 const SubNav = () => {
   return (
     <>
-      <div className="bg-slate-800 hidden lg:block">
-        <div className="container mx-auto px-5">
+      <div className="hidden lg:block">
+        <div className="container bg-slate-800  mx-auto px-5">
           <div>
             <ul className="flex gap-6 items-center h-11 text-gray-300 divide-x">
               <li className="text-gray-300 transition-colors ease-in-out hover:text-white pl-0">

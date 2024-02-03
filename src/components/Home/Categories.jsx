@@ -15,8 +15,8 @@ import {
 const Categories = () => {
   return (
     <>
-      <section className="bg-light-100 py-14">
-        <div className="container mx-auto px-5">
+      <section>
+        <div className="container mx-auto px-5 bg-light-100 py-14">
           <div>
             {/* Category card */}
             <Carousel className="mx-auto">
@@ -39,10 +39,14 @@ const Categories = () => {
                   />
                 </CarouselItem>
                 <CarouselItem className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                  <CategoryCard title="Smart Watches" icon={<BsSmartwatch />} />
+                  <CategoryCard 
+                  title="Smart Watches" 
+                  icon={<BsSmartwatch />} />
                 </CarouselItem>
                 <CarouselItem className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
-                  <CategoryCard title="Cameras" icon={<IoCameraOutline />} />
+                  <CategoryCard 
+                  title="Cameras" 
+                  icon={<IoCameraOutline />} />
                 </CarouselItem>
                 <CarouselItem className="basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5">
                   <CategoryCard 

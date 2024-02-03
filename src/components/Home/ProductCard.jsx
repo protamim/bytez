@@ -9,16 +9,21 @@ const ProductCard = ({ product, productName, price }) => {
           <HiOutlineHeart className="transition-colors ease-in-out hover:fill-red-600 hover:stroke-red-600" />
         </span>
         {/* Product Image */}
-        <span className="w-24 mt-8 h-24 lg:w-36 lg:h-36">
+        <span className="w-24 mt-8 h-24 lg:w-36 lg:h-36 flex-1">
           <img className="mx-auto" src={product} alt="" />
         </span>
-        <h4 className="flex-grow text-xs text-center text-black lg:text-base">
-          {productName}
-        </h4>
-        <p className="text-sm font-semibold lg:text-xl lg:leading-6">{price}</p>
-        <Button className={buttonVariants({ variant: "fill", size: "fill" })}>
-          Buy Now
-        </Button>
+        {/* Card Body */}
+        <div className="flex flex-col gap-3 items-center">
+          <h4 className="flex-grow text-xs text-center text-black lg:text-base">
+            {productName}
+          </h4>
+          <p className="text-sm font-semibold lg:text-xl lg:leading-6">
+            {price}
+          </p>
+          <Button className={buttonVariants({ variant: "fill", size: "fill" })}>
+            Buy Now
+          </Button>
+        </div>
       </div>
     </>
   );

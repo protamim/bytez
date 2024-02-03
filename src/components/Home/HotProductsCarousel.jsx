@@ -1,12 +1,12 @@
-import { ipad, ipadPro, iphone14 } from "@/assets/images/home/products";
+import { ipadPro, macbookPro, samsung, smartWatch } from "@/assets/images/home/products";
 import { Button } from "../ui/button";
 import { useCallback, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 
 const products = [
   {
-    image: ipad,
-    title: "Ipad",
+    image: smartWatch,
+    title: "Smart Watch",
     description:
       "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
     color: "#f4f6f4",
@@ -19,15 +19,15 @@ const products = [
     color: "#e1e1e199",
   },
   {
-    image: iphone14,
-    title: "Iphone 14",
+    image: samsung,
+    title: "Samsung Galaxy",
     description:
       "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
     color: "#a7a7a388",
   },
   {
-    image: iphone14,
-    title: "Iphone 14",
+    image: macbookPro,
+    title: "Macbook Pro",
     description:
       "iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking and ease of use.",
     color: "#ccffdc",
@@ -75,8 +75,8 @@ const HotProductsCarousel = () => {
 
   return (
     <>
-      <section className="bg-light-100 pb-8">
-        <div className="container px-0">
+      <section>
+        <div className="container px-0 bg-light-100 pb-8">
           <div>
             <div className="overflow-hidden" ref={emblaRef}>
               <div className="flex">
@@ -85,8 +85,9 @@ const HotProductsCarousel = () => {
                   <div
                     key={index}
                     className={`flex flex-col gap-4 flex-grow-0 flex-shrink-0 basis-full md:basis-1/2 lg:basis-1/4 bg-[${product.color}]`}
+                    style={{backgroundColor: `${product.color}`}}
                   >
-                    <div className="max-w-52 mx-auto">
+                    <div className="max-w-52 mx-auto flex-1">
                       <img src={product.image} alt="" />
                     </div>
                     <div className="flex flex-col gap-4 p-4">
@@ -96,7 +97,7 @@ const HotProductsCarousel = () => {
                       <p className="text-center md:text-left text-sm text-dark-100 max-w-xs mx-auto md:mx-0">
                         {product.description}
                       </p>
-                      <Button className="bg-transparent w-1/2 mx-auto md:mx-0 border border-black hover:bg-black hover:text-white">
+                      <Button className="bg-transparent w-1/2 mx-auto md:mx-0 border border-black transition-colors ease-in-out duration-500 hover:bg-black hover:text-white">
                         Shop Now
                       </Button>
                     </div>

@@ -5,7 +5,7 @@ const SmallerBanners = () => {
   return (
     <>
       <section>
-        <div className="sm:grid sm:grid-cols-2 xl:grid-cols-4">
+        <div className="container px-0 sm:grid sm:grid-cols-2 xl:grid-cols-4">
           <HTMLComment text=" Item 1 " /> {/* Item 1 */}
           <div className="flex flex-col items-center bg-primary gap-6 p-6 xl:order-3">
             <span className="max-w-sm">

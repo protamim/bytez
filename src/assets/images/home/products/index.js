@@ -10,6 +10,10 @@ import macbookPro from "./macbook-pro.png";
 import samsung from "./samsung.png";
 import smartWatch from "./smart-watch.png";
 import watch from "./watch.png";
+import summerSale_1 from "./summer-sale-1.png"
+import summerSale_2 from "./summer-sale-2.png"
+import summerSale_3 from "./summer-sale-3.png"
+import summerSale_4 from "./summer-sale-4.png"
 
 export {
   blackWatch,
@@ -24,4 +28,8 @@ export {
   samsung,
   smartWatch,
   watch,
+  summerSale_1,
+  summerSale_2,
+  summerSale_3,
+  summerSale_4
 };

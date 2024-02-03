@@ -4,6 +4,8 @@ import SmallerBanners from "@/components/Home/SmallerBanners";
 import Categories from "@/components/Home/Categories";
 import ProductsTab from "@/components/Home/ProductsTab";
 import HotProductsCarousel from "@/components/Home/HotProductsCarousel";
+import DiscountProducts from "@/components/Home/DiscountProducts";
+import SummerSale from "@/components/Home/SummerSale";
 
 const Homepage = () => {
   return (
@@ -18,6 +20,10 @@ const Homepage = () => {
       <ProductsTab />
       <HTMLComment text=" Hot Products "/>
       <HotProductsCarousel />
+      <HTMLComment text=" Discount Products "/>
+      <DiscountProducts />
+      <HTMLComment text=" Summer Saler Banner " />
+      <SummerSale />
     </>
   );
 };
