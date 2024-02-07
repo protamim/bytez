@@ -1,14 +1,13 @@
 /* Google font - Roboto */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /* Tailwind directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bounce-top-to-bottom {
@@ -18,10 +17,43 @@ body {
   animation-fill-mode: both;
 }
 @-webkit-keyframes bounce-top-to-bottom {
-  from{display: none; transform: translateY(-100px);}
-  to{ display: block; transform: translateY(0px);}
+  from {
+    display: none;
+    transform: translateY(-100px);
+  }
+  to {
+    display: block;
+    transform: translateY(0px);
+  }
 }
 @keyframes bounce-top-to-bottom {
-  from {display: none; transform: translateY(-100px);}
-  to {display: block; transform: translateY(0px);}
+  from {
+    display: none;
+    transform: translateY(-100px);
+  }
+  to {
+    display: block;
+    transform: translateY(0px);
+  }
+}
+
+
+/* width */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 2px;
+}
+
+/* Track */
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

@@ -7,7 +7,7 @@ const NavLinks = () => {
         <Link>Home</Link>
       </li>
       <li className="text-gray-700 hover:text-black transition-colors ease-in-out ">
-        <Link>About</Link>
+        <Link to="/shop">Shop</Link>
       </li>
       <li className="text-gray-700 hover:text-black transition-colors ease-in-out ">
         <Link>Contact Us</Link>

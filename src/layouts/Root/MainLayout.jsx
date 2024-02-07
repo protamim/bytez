@@ -10,7 +10,7 @@ const MainLayout = () => {
       <Navbar />
       {/* Sub Navigation */}
       <SubNav />
-      {/* // Main Content start */}
+      {/* Main Content */}
       <main>
         <Outlet />
       </main>

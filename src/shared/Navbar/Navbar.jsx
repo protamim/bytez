@@ -4,6 +4,7 @@ import { FaCartPlus } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa6";
 import MobileMenu from "./MobileMenu";
 import NavLinks from "./NavLinks";
+import SearchInput from "@/components/common/SearchInput";
 
 const Navbar = () => {
   return (
@@ -16,16 +17,7 @@ const Navbar = () => {
               <Link to={"/"}>Bytez</Link>
             </span>
             {/* Nav Search bar */}
-            <form className="relative md:col-span-5">
-              <input
-                className="bg-gray-200 pl-8 h-8 text-sm w-full focus:outline-none rounded-md"
-                type="search"
-                placeholder="search"
-              />
-              <span className="absolute top-1/2 left-2 -translate-y-1/2">
-                <IoIosSearch />
-              </span>
-            </form>
+            <SearchInput icon={<IoIosSearch />} />
             {/* Navigation menu */}
             <ul className="flex justify-start gap-4 sm:[&>li]:text-sm md:col-span-4 md:justify-center lg:sm:[&>li]:text-base lg:gap-7">
               <NavLinks />
